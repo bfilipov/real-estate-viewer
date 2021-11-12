@@ -1,0 +1,111 @@
+2021-11-12 07:44:57,575 ERROR: Exception on /imoti [GET] [in /home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/bogo/projects/real_estate_viewer/app/main/routes.py", line 26, in imoti
+    return render_template('imoti.html', imoti=imoti)
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/bogo/projects/real_estate_viewer/app/templates/imoti.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
+    {%- block html %}
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block "html"
+    {% block body -%}
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block "body"
+    {% block content -%}
+  File "/home/bogo/projects/real_estate_viewer/app/templates/imoti.html", line 42, in block "content"
+    <a class="page-link" href="{{ url_for('main.imoti', page=imoti.prev_num) }}">&laquo;</a>
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask/helpers.py", line 358, in url_for
+    endpoint, values, method=method, force_external=external
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/werkzeug/routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'imoti'. Did you mean 'main.imoti' instead?
+2021-11-12 07:44:59,749 INFO: Real_estate_viewer startup [in /home/bogo/projects/real_estate_viewer/app/__init__.py:52]
+2021-11-12 07:46:15,700 INFO: Real_estate_viewer startup [in /home/bogo/projects/real_estate_viewer/app/__init__.py:52]
+2021-11-12 07:54:32,072 INFO: Real_estate_viewer startup [in /home/bogo/projects/real_estate_viewer/app/__init__.py:52]
+2021-11-12 07:55:13,524 INFO: Real_estate_viewer startup [in /home/bogo/projects/real_estate_viewer/app/__init__.py:52]
+2021-11-12 07:55:16,969 ERROR: Exception on /zemq [GET] [in /home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/bogo/projects/real_estate_viewer/app/main/routes.py", line 44, in zemq
+    result = db.engine.execute(sql_query).paginate(page=page, per_page=ROWS_PER_PAGE)
+AttributeError: 'ResultProxy' object has no attribute 'paginate'
+2021-11-12 07:56:28,816 INFO: Real_estate_viewer startup [in /home/bogo/projects/real_estate_viewer/app/__init__.py:52]
+2021-11-12 07:56:32,102 ERROR: Exception on /zemq [GET] [in /home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/bogo/projects/real_estate_viewer/app/main/routes.py", line 44, in zemq
+    return render_template('imoti.html', imoti=result)
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/bogo/projects/real_estate_viewer/app/templates/imoti.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
+    {%- block html %}
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block "html"
+    {% block body -%}
+  File "/home/bogo/anaconda3/envs/business_game/lib/python3.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block "body"
+    {% block content -%}
+  File "/home/bogo/projects/real_estate_viewer/app/templates/imoti.html", line 45, in block "content"
+    {% for page_num in imoti.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
+jinja2.exceptions.UndefinedError: 'sqlalchemy.engine.result.ResultProxy object' has no attribute 'iter_pages'
+2021-11-12 08:14:41,032 INFO: Real_estate_viewer startup [in /home/bogo/projects/real_estate_viewer/app/__init__.py:52]

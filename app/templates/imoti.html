@@ -23,7 +23,11 @@
                     <td>{{ imot.category }}</td>
                     <td>{{ imot.city }}</td>
                     <td>{{ imot.end_period }}</td>
-                    <td><img src="{{imot.images[0]}}" alt="kartinka"></td>
+                    <td>                    
+                        <div class="col-md-4 px-0">
+                            <img src="{{imot.images[0]}}" alt="kartinka" class="img-responsive">
+                        </div>
+                    </td>
                 </tr>
                 {% endfor %}
             </tbody>
@@ -34,19 +38,27 @@
 
     <nav aria-label="Pagination">
         <ul class="pagination">
-            <li class="page-item"><a class="page-link" href="{{ url_for('imoti', page=imoti.prev_num) }}">&laquo;</a></li>
+            <li class="page-item">
+                <a class="page-link" href="{{ url_for('main.imoti', page=imoti.prev_num) }}">&laquo;</a>
+            </li>
         <!-- Loop through the number of pages to display a link for each-->
             {% for page_num in imoti.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
                 {% if page_num %}
                 <!-- Check for the active page and set the link to "Active"-->
                     {% if imoti.page == page_num %}
-                        <li class="page-item active"><a href="{{ url_for('imoti', page=page_num) }}"  class="page-link active">{{ page_num }}</a></li>
+                        <li class="page-item active">
+                            <a href="{{ url_for('main.imoti', page=page_num) }}"  class="page-link active">{{ page_num }}</a>
+                        </li>
                     {% else %}
-                        <li class="page-item"><a href="{{ url_for('imoti', page=page_num) }}" class="page-link">{{ page_num }}</a></li>
+                        <li class="page-item">
+                            <a href="{{ url_for('main.imoti', page=page_num) }}" class="page-link">{{ page_num }}</a>
+                        </li>
                     {% endif %}
                 {% endif %}
             {% endfor %}
-            <li class="page-item"><a href="{{ url_for('imoti', page=imoti.next_num) }}" class="page-link">&raquo;</a></li>
+            <li class="page-item">
+                <a href="{{ url_for('main.imoti', page=imoti.next_num) }}" class="page-link">&raquo;</a>
+            </li>
         </ul>
     </nav>
 </div>

@@ -1,6 +1,8 @@
 {% extends 'bootstrap/base.html' %}
 
 {% block content %}
-    <a href="{{ url_for('imoti', page=page_num) }}"
-       class="btn active btn-light">Imoti</a>
+    <a href="{{ url_for('main.imoti', page=page_num) }}"
+       class="btn active btn-light">Имоти</a>
+    <a href="{{ url_for('main.zemq', page=page_num) }}"
+           class="btn active btn-light">Земя</a>
 {% endblock %}
